@@ -6,6 +6,7 @@ import "../sass/style.scss";
 import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 window.addEventListener('load', (event) => {
+
   const search = document.querySelector(".search-block-form")
   document.querySelector(".search-block-form > div").classList.add("d-flex", "justify-content-center", "container");
   document.querySelector(".search-block-form div.form-item").classList.add("col-6");
@@ -20,12 +21,11 @@ window.addEventListener('load', (event) => {
   if (document.querySelector('.field-type-paragraphs')) {
     document.querySelector('.field-type-paragraphs > .field-items').classList.add("row");
   }
-  let items = document.querySelectorAll('.field-type-paragraphs> .field-items > .field-item');
+  let items = document.querySelectorAll('.field-type-paragraphs > .field-items > .field-item');
   for(let item of items){
     item.classList.add("col-xs-12","col-md-6","col-xl-4");
     item.children[0].classList.add('card')
     item.children[0].childNodes[1].classList.add('card-body')
-    
     if (item.querySelector('.field-name-field-heading')){
       let title = item.querySelector('.field-name-field-heading .field-item').innerHTML
       item.querySelector('.field-name-field-heading .field-item').innerHTML = '<h3>' + title + '</h3>';

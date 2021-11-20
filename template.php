@@ -31,10 +31,11 @@ function bootstrap5_fibonacci_preprocess_layout(&$variables)
     }
   }
 
-  //  Default Backdrop layouts contain both .container and .container-fluid.
-  if (theme_get_setting('bootstrap5_fibonacci_container') == 'container') {
-    backdrop_add_js('(function($) { $(".container.container-fluid").removeClass("container-fluid");})(jQuery);', array('type' => 'inline', 'scope' => 'footer'));
-  }
+
+//  Default Backdrop layouts contain both .container and .container-fluid.
+	backdrop_add_js('(function($) { $(".l-header-inner.container.container-fluid").removeClass("container-fluid").removeClass("container");})(jQuery);', array('type' => 'inline', 'scope' => 'footer'));
+	backdrop_add_js('(function($) { $(".l-wrapper-inner.container.container-fluid").removeClass("container-fluid");})(jQuery);', array('type' => 'inline', 'scope' => 'footer'));
+
 }
 
 /**

@@ -1,0 +1,189 @@
+// Content region styles.
+
+h1,
+.h1,
+h1.page-header {
+  background-color: $fb-orange;
+  color: #fff;
+  padding: 11px 28px;
+  min-height: 50px;
+}
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  line-height: 1.2;
+}
+
+.btn {
+  @include border-top-radius(20px);
+  // @include border-right-radius(20px);
+  @include border-bottom-radius(20px);
+  // @include border-left-radius(20px);
+
+  &:hover {
+    background-color: $gray-600;
+    border-color: $gray-600;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border: $primary;
+}
+.btn-secondary {
+  background-color: $secondary;
+  border: $secondary;
+}
+
+.secondary-page-images,
+h1.page-header {
+  margin-left: -25px;
+  margin-right: -20px;
+
+  body.front & {
+    display: none;
+  }
+}
+
+h2,
+.h2 {
+  color: $fb-orange;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#skip-link {
+  display: none;
+}
+
+// Text formats
+.big-white {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+  }
+}
+
+.large-text {
+  font-size: $lead-font-size;
+}
+
+.caret-right {
+  &:after {
+    // @include cmqcc-icons;
+    content: "i";
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.dark-link {
+  color: $gray-700;
+
+  &:hover {
+    color: $gray-500;
+  }
+}
+
+.gray-text {
+  color: $gray-500;
+  margin-top: 0;
+
+  h3 + & {
+    margin-top: -10px;
+  }
+}
+
+.addthis-sharing .addthis_toolbox {
+  float: right;
+}
+
+body.cke_editable {
+  a {
+    &:hover {
+      color: $gray-500;
+    }
+  }
+
+  iframe {
+    margin: 10px 0;
+    height: 365px;
+
+    @media (max-width: 991px) {
+      height: 295px;
+    }
+
+    @media (max-width: 767px) {
+      height: 415px;
+    }
+
+    @media (max-width: 575px) {
+      height: 435px;
+    }
+
+    @media (max-width: 668px) {
+      height: 389px;
+    }
+
+    @media (max-width: 569px) {
+      height: 333px;
+    }
+
+    @media (max-width: 415px) {
+      height: 245px;
+    }
+
+    @media (max-width: 569px) {
+      height: 333px;
+    }
+  }
+}
+
+@mixin block-style {
+  padding-bottom: 20px;
+
+  &:before {
+    padding-top: 20px;
+    width: 100%;
+    content: " ";
+    border-top: 1px solid $gray-100;
+  }
+
+  &:first-child:before,
+  #block-system-main + &:before {
+    border-top: 0;
+    padding-top: 20px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .contextual-links-wrapper + {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin-top: 0;
+    }
+  }
+}

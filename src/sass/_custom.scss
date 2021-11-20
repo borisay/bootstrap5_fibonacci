@@ -1,0 +1,134 @@
+$colors: (
+  purple: #4c3b73,
+);
+
+.beta {
+  color: $yellow-300;
+  background-color: $indigo-600;
+}
+$fb-teal: #008890;
+$fb-purple: #4c3b73; //fb variable
+// $fb-purple: $purple; //bs variable
+$fb-orange: #f9a226;
+$fb-gray: #d9d9d9;
+
+$primary: $fb-purple;
+$secondary: $fb-teal;
+$danger: $fb-orange;
+
+.purple {
+  background-color: $fb-purple;
+  color: white;
+}
+
+.orange {
+  background-color: $fb-orange;
+  color: white;
+}
+
+.teal {
+  background-color: $fb-teal;
+  color: white;
+}
+
+.grey {
+  background-color: $fb-gray;
+  color: white;
+}
+
+.well.purple,
+.views-row.views-row-last.well.purple {
+  border-bottom: 3px solid $fb-purple;
+}
+
+.teal h3,
+.teal h2,
+.teal a,
+.teal.btn a,
+.purple a,
+.purple.btn a,
+.orange a,
+.orange.btn a {
+  color: white;
+}
+
+.teal a:hover,
+.teal.btn a:hover,
+.purple a:hover,
+.purple.btn a:hover,
+.orange a:hover,
+.orange.btn a:hover {
+  color: $fb-gray;
+}
+
+.teal a,
+.teal.btn a,
+.purple a,
+.purple.btn a,
+.orange a,
+.orange.btn a {
+  border-bottom: 1px dotted;
+}
+
+
+// search form
+//
+
+.search-block-form {
+  opacity: 0;
+  height: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.search-block-form.show {
+  display: block;
+  opacity: 1;
+  height: 87px;
+  margin: 0 auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+// button open search
+div.open-search{
+  color: $navbar-light-color;
+  padding: 0.5rem;
+  margin: 0 0 0 0.5em;
+  cursor: pointer;
+  // border: none;
+  // background-color: none!important;
+  &:hover,
+  &:focus {
+    color: $navbar-light-hover-color;
+    // background:$gray-300;
+  }
+}
+//
+.navbar-brand {
+  width: 4em;
+}
+
+// Paragraph - paragraphs-items-field-landing-page-item
+// bootstrap card
+.paragraphs-items-field-landing-page-item {
+  .card-title{
+    background-color: $fb-teal;
+    color: white;
+    padding: 1em;
+  }
+  .card-subtitle{
+    background-color: $fb-orange;
+    color: white;
+    padding: 1em;
+  }
+  .card-text{
+    background-color: $fb-purple;
+    color: white;
+    padding: 1em;
+  }
+
+}

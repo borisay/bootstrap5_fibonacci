@@ -1,0 +1,12 @@
+name = Bootstrap 5 Fibonacci
+description = Built to use SASS and JS Bootstrap 5 front-end framework for faster and easier web development.
+backdrop = 1.x
+type = theme
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = dist/main.css
+stylesheets[all][] = dist/564.css
+stylesheets[all][] = dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_bun-15c01b.css
+scripts[] = dist/main.js
+scripts[] = dist/564.js
+scripts[] = dist/vendors-node_modules_babel_polyfill_lib_index_js-node_modules_bootstrap_dist_js_bootstrap_bun-15c01b.js
